@@ -23,9 +23,12 @@ export default function MyRow<T extends object>({
   return (
     <Row
       id={id}
+      
       {...otherProps}
       className={({ isSelected, isFocused }) => 
-        `${isSelected ? "bg-[#2b494a] clip-inset-rounded text-white" : ""}
+        `
+      h-12
+      ${isSelected ? "bg-[#2b494a] clip-inset-rounded text-white" : ""}
       ${isFocused ? "outline-none" : " "}
       `}
     >
@@ -34,9 +37,9 @@ export default function MyRow<T extends object>({
           <Checkbox slot={"selection"} className="flex justify-center w-8 h-8">
             {({ isSelected }) =>
               isSelected ? (
-                <MdCheckBox size="full" />
+                <MdCheckBox size="30" />
               ) : (
-                <MdCheckBoxOutlineBlank size="full" />
+                <MdCheckBoxOutlineBlank size="30" />
               )
             }
           </Checkbox>

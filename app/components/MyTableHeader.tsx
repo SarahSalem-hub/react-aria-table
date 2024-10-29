@@ -31,13 +31,13 @@ export default function MyTableHeader<T extends object>({
             >
               {({ isSelected, isIndeterminate }) => {
                 if (isIndeterminate) {
-                  return <MdIndeterminateCheckBox size="full" />;
+                  return <MdIndeterminateCheckBox size={30} />;
                 }
                 if (isSelected) {
-                  return <MdCheckBox size="full" />;
+                  return <MdCheckBox size={30} />;
                 }
 
-                return <MdCheckBoxOutlineBlank size="full" />;
+                return <MdCheckBoxOutlineBlank size={30} />;
               }}
             </Checkbox>
           )}
