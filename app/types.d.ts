@@ -7,8 +7,9 @@
 // };
 
 type TableColumn = {
-  id: number;
-  columnName: string;
+  id:   number;
+  name?: string;
+  columnName?:string
   isRowHeader?:boolean
 };
 

@@ -1,8 +1,36 @@
-export const columns1: TableColumn[] = [
-  { id: 0, columnName: "name" },
-  { id: 1, columnName: "email" },
-  { id: 2, columnName: "grade" },
-  { id: 3, columnName: "number" },
+// export const columns1  = [
+//   {  name: 'Name', id: 'name' ,isRowHeader: true},
+//   {  name: 'Email', id: 'email' },
+//   {   name: 'Grade', id: 'grade' },
+//   {   name: 'Number', id: 'number' },
+// ];
+
+
+// export const columns2  = [
+//   { id: "title", columnName: "title", isRowHeader:true },
+//   { id: "author", columnName: "author" },
+//   { id: "genre", columnName: "genre" },
+//   { id: "publishedYear", columnName: "publishedYear" },
+//   { id: "pages", columnName: "pages" },
+//   { id: "language", columnName: "language" },
+//   { id: "available", columnName: "available" }
+// ];
+
+export const columns1 = [
+  { id: "name", name: "Name", isRowHeader: true },
+  { id: "email", name: "Email" },
+  { id: "grade", name: "Grade" },
+  { id: "number", name: "Number" },
+];
+
+export const columns2 = [
+  { id: "title", name: "Title", isRowHeader: true },
+  { id: "author", name: "Author" },
+  { id: "genre", name: "Genre" },
+  { id: "publishedYear", name: "Published Year" },
+  { id: "pages", name: "Pages" },
+  { id: "language", name: "Language" },
+  { id: "available", name: "Available" },
 ];
 
 export const table1: RowData[] = [
@@ -20,18 +48,8 @@ export const table1: RowData[] = [
 ];
 
 
-export const column2:TableColumn[] = [
-  { id: 0, columnName: "title" },
-  { id: 1, columnName: "author" },
-  { id: 2, columnName: "genre" },
-  { id: 3, columnName: "publishedYear" },
-  { id: 4, columnName: "pages" },
-  { id: 5, columnName: "language" },
-  { id: 6, columnName: "available" }
-];
 
-
-export const Table2:RowData[] =  [
+export const table2:RowData[] =  [
   {
     id: 0,
     title: "The Great Gatsby",
@@ -103,3 +121,6 @@ export const Table2:RowData[] =  [
     available: false
   }
 ];
+
+
+ 
